@@ -1,0 +1,277 @@
+:root{
+    --backgroundColor: rgba(243, 240, 236, 1);
+}
+// @import url('http://fonts.cdnfonts.com/css/montserrat');
+// @import url('http://fonts.cdnfonts.com/css/bebas-neue');
+
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url('./src/font/Montserrat-Regular.ttf')
+}
+
+@font-face {
+    font-family:'Bebas-Neue';
+    src: url('./src/font/Bebas-Neue.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+.header-container{
+    background-image: url(./src/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 919px;
+    width: 100vw;
+}
+.bold{
+    font-weight: 700;
+}
+.pink{
+    color: #ED5470;
+}
+.crossed-out{
+    text-decoration: line-through;
+}
+.header-content-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-content{
+    padding-top: 68px;
+    max-width: 550px;
+    &__h4{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 31px;
+    }
+    &__h2{
+        margin-top: 39px;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 72px;
+        font-family:'Bebas-Neue', sans-serif;
+    }
+    &__h3{
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 9px;
+    }
+    &__p{
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+.icon-boxs{
+    margin-top: 28px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.box-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 14px;
+    border-radius: 100%;
+    max-width: fit-content;
+}
+.box{
+    &:nth-child(1){
+        max-width:  153px;
+    }
+    &:nth-child(2){
+        max-width:  190px;
+    }
+    &:nth-child(3){
+        max-width:  150px;
+    }
+    &__p{
+        margin-top: 14px;
+    }
+}
+.btn{
+    width: inherit;
+    background: linear-gradient(90deg, #E78496 0%, #DA3D5A 100%);
+    border: 1px solid rgba(254, 163, 180, 0.6);
+    box-shadow: 0px 20px 30px rgba(218, 61, 90, 0.5);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+.btn-top{
+    width: 100%;
+    margin-top: 34px;
+    &__btn{
+        padding: 41px 0;
+    }
+}
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.main-titles{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 724px;
+    &__h2{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 70px;
+    }
+    &__h4{  
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 16px;
+    }
+    &__h5{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 26px;
+    }
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+.services-box{
+    width: 280px;
+    height: 699px;
+    background: #F5F1ED;
+    border-radius: 10px;
+    margin-bottom: 42px;
+    overflow: hidden;
+    &:hover{
+        overflow-y: auto;
+    }
+    &-content{
+        padding: 19px 40px;
+        &__id{
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 57px;
+            color: #ED5470;
+        }
+        &__title{
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 26px;
+            line-height:33px;
+        }
+        &__price{
+            margin-top: 10px;
+            color: #939393;
+            font-weight: 700;
+            font-size: 36px;
+            line-height:36px;
+        }
+        &__discr{
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
+.info{
+    padding-top: 88px;
+}
+.info-titles{
+    text-align: center;
+    max-width: 783px;
+    margin: 0 auto;
+    &__h1{
+        font-weight: 700;
+        font-size: 64px;
+        line-height:64px;
+        text-transform: uppercase;
+        font-family:'Bebas-Neue';
+        font-style: normal;
+    }
+    &__h1 span{
+        font-family:'Bebas-Neue', sans-serif;
+    }
+    &__h3{
+        text-transform: uppercase;
+        color: #927154;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 29x;
+        margin-top: 30px;
+    }
+    &__h4{
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 29px;
+        color: #AFAEAE;
+        margin-top: 53px;
+    }
+    &__time{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 70px;
+        margin-top: 14px;
+        font-family:'Bebas-Neue';
+    }
+}
+.bank{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 33px;
+}
+.bank-top{
+    text-align: center;
+    &__title{
+        font-family:'Bebas-Neue';
+        margin-top: 23px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+    }
+    &__text{
+        margin: 0;
+        padding: 0 42px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+.bank-form{
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+    &__input{
+        background: #F2F2F2;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        border-radius: 10px;
+        padding: 27px 0;
+        border: none;
+        text-align: center;
+    }
+    &__input:not(:first-child){
+        margin-top: 15px;
+    }
+}
+.btn-bank{
+    text-align: center;
+    margin-top: 28px;
+        &__btn{
+            padding: 41px 32px;
+        }
+}
